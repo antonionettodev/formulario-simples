@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Formulário</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="container">
+    <form>
+      <div class="input-field">
+        <label for="nome"><i class="bi bi-person"></i> Nome</label>
+        <input type="text" id="nome" name="nome" required placeholder="Insira seu nome">
+      </div>
+
+      <div class="input-field">
+        <label for="email"><i class="bi bi-envelope"></i> Email</label>
+        <input type="email" id="email" name="email" required placeholder="Insira seu email">
+      </div>
+
+      <div class="input-field">
+        <label for="idade"><i class="bi bi-calendar4-week"></i> Idade</label>
+        <input type="number" id="idade" name="idade" required placeholder="Insira sua idade">
+      </div>
+
+      <div class="input-field">
+        <label for="telefone"><i class="bi bi-telephone"></i> Telefone</label>
+        <input type="text" id="telefone" name="telefone" placeholder="Insira seu número">
+      </div>
+
+      <div class="input-field">
+        <label for="estado"><i class="bi bi-geo-alt"></i> Estado</label>
+        <select name="estado" id="estado" required>
+          <option disabled selected>De que Estado você é?</option>
+          <option value="Acre">AC - Acre</option>
+          <option value="Alagoas">AL - Alagoas</option>
+          <option value="Amapá">AP - Amapá</option>
+          <option value="Amazonas">AM - Amazonas</option>
+          <option value="Bahia">BA - Bahia</option>
+          <option value="Ceará">CE - Ceará</option>
+          <option value="Espírito Santo">ES - Espírito Santo</option>
+          <option value="Goiás">GO - Goiás</option>
+          <option value="Maranhão">MA - Maranhão</option>
+          <option value="Mato Grosso">MT - Mato Grosso</option>
+          <option value="Mato Grosso do Sul">MS - Mato Grosso</option>
+          <option value="Minas Gerais">MG - Minas Gerais</option>
+          <option value="Pará">PA - Pará</option>
+          <option value="Paraíba">PB - Paraíba</option>
+          <option value="Paraná">PR - Paraná</option>
+          <option value="Pernambuco">PE - Pernambuco</option>
+          <option value="Piauí">PI - Piauí</option>
+          <option value="Rio de Janeiro">RJ - Rio de Janeiro</option>
+          <option value="Rio Grande do Norte">RN - Rio Grande do Norte</option>
+          <option value="Rio Grande do Sul">RS - Rio Grande do Sul</option>
+          <option value="Rondônia">RO - Rondônia</option>
+          <option value="Roraima">RR - Roraima</option>
+          <option value="Santa Catarina">SC - Santa Catarina</option>
+          <option value="São Paulo">SP - São Paulo</option>
+          <option value="Sergipe">SE - Sergipe</option>
+          <option value="Tocantins">TO - Tocantins</option>
+          <option value="Distrito Federal">DF - Distrito Federal</option>
+        </select>
+      </div>
+
+      <div class="radio-field">
+        <label><i class="bi bi-journal-code"></i> Experiência Profissional</label>
+        <span class="radio-btn">
+          <input type="radio" value="I" name="experiencia"> <label> Iniciante</label>
+        </span>
+
+        <span class="radio-btn">
+          <input type="radio" value="J" name="experiencia"> <label> Júnior</label>
+        </span>
+
+        <span class="radio-btn">
+          <input type="radio" value="P" name="experiencia"> <label> Pleno</label>
+        </span>
+
+        <span class="radio-btn">
+          <input type="radio" value="S" name="experiencia"> <label> Sênior</label>
+        </span>
+      </div>
+
+      <div class="input-field">
+        <label for="mensagem"><i class="bi bi-card-text"></i> Deixe uma mensagem</label>
+        <textarea required name="mensagem" id="mensagem" placeholder="Sua mensagem"></textarea>
+      </div>
+
+      <div class="input-field">
+        <input type="submit" value="Enviar" id="enviar">
+      </div>
+    </form>
+
+    <footer class="footer">
+      <img src="icons-fox.svg"> <p> Feito por <span class="recolor">Antonio Netto</span></p>
+    </footer>
+  </section>
+</body>
+</html>
